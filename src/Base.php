@@ -139,7 +139,7 @@ class Base {
 	 */
 	function curlInfoIPC($callback = null) {
 		$queue = $this->getMessageQueue ( true ) [0];
-		$nc = ncurses_init ();
+		ncurses_init ();
 		$window = ncurses_newwin ( 0, 0, 0, 0 );
 		$caption = '';
 		$list = array ();
